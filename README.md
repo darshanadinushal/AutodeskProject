@@ -26,6 +26,22 @@ Navigate to http://localhost:4200/ in your browser it will redirect to login pag
 Secound Step run backend application locally.
 
 ```
+# clone the repository
+
+# change directory to web API folder
+$ cd autodesk-backend/Autodesk.Application.RestService
+
+# run web api server
+$ dotnet run
+
+# install npm packages
+$ npm i
+
+# run web app
+$ dotnet run
+```
+
+
 
 
 
