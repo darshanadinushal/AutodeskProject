@@ -25,9 +25,12 @@ Navigate to http://localhost:4200/ in your browser it will redirect to login pag
 
 Secound Step run backend application locally.
 
-```
-# clone the repository
+Before run the application following things we need to do.
 
+1.) Create a sql server database autodeskdb ,and run the script file "Tbl_user_script.sql" in root folder.
+
+
+```
 # change directory to web API folder
 $ cd autodesk-backend/Autodesk.Application.RestService
 
