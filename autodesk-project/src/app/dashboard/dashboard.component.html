@@ -1,0 +1,12 @@
+
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand"><span class="user-profile">
+        {{userProfile.firstName }}  {{userProfile.lastName }}
+    </span></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+    <button class="btn btn-outline-info my-2 my-sm-0 btn-logout" (click)="signOutClick()" >Sign out</button>
+  </nav>

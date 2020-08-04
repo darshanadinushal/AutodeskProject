@@ -1,0 +1,44 @@
+<div class="container loginUser" >
+    <div class="row sec-welcome">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 lable-welcome"><span><b>Welcome</b></span></div>
+      <div class="col-md-3"></div>
+    </div> 
+
+    <div class="row sec-welcome">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 lable-username"><span><b>{{userName}}</b></span></div>
+        <div class="col-md-3"></div>
+      </div> 
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+
+            <form [formGroup]="loginFormGroup">
+
+                <div class="form-row formItem">
+                  <div class="col-md-12 mb-3 ">
+                    <label for="lablepassword" class="inputlable">Password</label>
+                    <input type="password" class="form-control form-control-lg" id="inputUserName" placeholder="" formControlName="password"  required
+                    [ngClass]="{'form-control': true , 'is-invalid': isPasswordError && loginFormGroup.controls.password.invalid  }">
+                      <div  *ngIf="isPasswordError && loginFormGroup.controls.password.invalid">
+                        <div class="alert alert-secondary lable-error " role="alert">
+                          Please enter a vaild password.
+                        </div>
+
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="form-row formItem">
+                    <div class="col-md-12 mb-3">
+                        <button type="button" (click)="passwordClick()" class="btn btn-primary btn-lg btn-block btn-signIn"> Sign in</button>
+                    </div>
+                </div>
+              </form>
+              
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

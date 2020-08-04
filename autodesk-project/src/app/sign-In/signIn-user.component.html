@@ -1,0 +1,55 @@
+
+<div class="container signInUser" >
+    <div class="row signInlable">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><span class="lable-sign-In"><b>Sign in</b></span></div>
+      <div class="col-md-3"></div>
+    </div> 
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+
+            <form [formGroup]="signInFormGroup">
+
+                <div class="form-row formItem">
+                  <div class="col-md-12 mb-3 ">
+                    <label for="lableUserName" class="inputlable">Username</label>
+                    <input type="text" class="form-control form-control-lg" id="inputUserName" placeholder="" formControlName="userName"  required
+                    [ngClass]="{'form-control': true , 'is-invalid': isUsernameError && signInFormGroup.controls.userName.invalid  }">
+                      <div  *ngIf="isUsernameError && signInFormGroup.controls.userName.invalid">
+                        <div class="alert alert-secondary lable-error " role="alert">
+                          Please enter a vaild username.
+                        </div>
+
+                      </div>
+                  </div>
+                </div>
+    
+                <div class="form-row formItem">
+                    <div class="col-md-12 mb-3">
+                        <button type="button" (click)="nextUserClick()" class="btn btn-primary btn-lg btn-block btn-signIn"> {{showButnName? "Verifying" : "Next"  }}</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-signIn">
+                      <label class="form-check-label" for="invalidCheck2">
+                        New to Autodesk? 
+                      </label>
+                      <button type="button" class="btn btn-link" (click)="createAccountClick()"><h5>Create account</h5></button>
+                    </div>
+                  </div>
+
+
+              </form>
+              
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+
+
+    
+</div>
