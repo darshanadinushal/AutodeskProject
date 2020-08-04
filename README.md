@@ -1,4 +1,11 @@
 # AutodeskProject
+In this exam I use Angular 7 , bootstrapcss and SASS  for the fontend ,backend .net core 3 ,EF Core ,Sql Server as db.
+
+Backend application only one single application that I created ,because user need to run it locally ,it is easy run single ddl file locally.But within the project I devide in to couple of layers Controller ,Business logic and Service. Here I use the database first approch and AutoMapper I use to convert db class into entity class.
+
+Assumption
+ - password pass to the backend application in encrypted way.
+ - password saved in the database in encrypted format.
 
 # Getting started
 
