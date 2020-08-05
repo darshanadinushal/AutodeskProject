@@ -11,6 +11,10 @@ Assumption
 
 Following step we need to do for the run the application
 
+clone the project
+```
+git clone https://github.com/darshanadinushal/AutodeskProject.git
+```
 
 First Step run backend application locally.
 
@@ -37,7 +41,7 @@ $ dotnet run
 Secound  step run web applicant locally.
 Make sure you have the Angular CLI installed globally.
 ```
-git clone https://github.com/darshanadinushal/AutodeskProject.git
+
 
 cd autodesk-project
 
