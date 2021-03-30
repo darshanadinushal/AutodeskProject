@@ -1,5 +1,5 @@
 # AutoMobileProject
-In this exam I use Angular 7 , bootstrapcss and SASS  for the fontend ,backend application I use .net core 3 ,EF Core and Sql Server as db.
+In this project I use Angular 7 , bootstrapcss and SASS  for the fontend ,backend application I use .net core 3 ,EF Core and Sql Server as db.
 
 Backend application only one single application that I created ,because user need to run it locally ,It is easy to run single ddl file locally.But within the project I devide in to couple of layers Controller ,Business logic and Service.I also use dependency injection to register sevice and managers.  Here I use the database first approch and AutoMapper I use to convert db class into entity class.
 
